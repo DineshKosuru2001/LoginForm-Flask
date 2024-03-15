@@ -1,0 +1,61 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 97.5vh;
+    background-color: blueviolet;
+}
+
+.login{
+    background-color:whitesmoke;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 6px;
+    
+}
+
+.login h2{
+    text-align: center;
+    color: blueviolet;
+    font-weight: 800;
+    
+    
+}
+
+.login form .form-control, .login form .btn {
+    text-align: center;
+   
+}
+
+.form-control input{
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid blueviolet;
+    margin-bottom: 20px;
+}
+
+
+
+.btn button{
+
+    width: 100%;
+    max-width: 100px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid blueviolet;
+    margin-bottom: 30px;
+    background-color: blueviolet;
+    color: aliceblue;
+    font-weight: 500;
+    
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    transform: translateY(-15px);
+        
+}
