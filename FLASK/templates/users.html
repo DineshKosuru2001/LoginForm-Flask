@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+
+<style>
+
+body{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    height: 97.5vh;
+    
+}
+
+
+.table-info h2{
+    color: blueviolet;
+    text-align: center;
+    
+}
+
+.table-info table, tr, td, th {
+    border: 1px solid blueviolet;
+    border-collapse: collapse;
+    padding: 10px;
+  
+    
+
+}
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div class="table-info">
+
+    <h2>Users</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for u in userDetails %}
+            <tr>
+                <td>{{ u[0] }}</td>
+                <td>{{ u[1] }}</td>
+                <td>{{ u[2] }}</td>
+                <td>{{ u[3] }}</td>
+                <td>{{ u[4] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+</div>
+
+
+</body>
+   
+
+</html>

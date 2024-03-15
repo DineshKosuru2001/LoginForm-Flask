@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+
+<link rel="stylesheet" href="static\css\style.css">
+
+
+</head>
+<body>
+
+    <div class="login">
+
+        <h2>Login</h2>
+        <form id="loginForm"  method="post" action="/" onsubmit="return validateForm()" >
+            <div class="form-control">
+                
+                <input type="text" id="name" name="name" placeholder="Enter Name*">
+                <div id="nameError" class="error-message"></div>
+            </div>
+
+            <div class="form-control">
+                
+                <input type="email" id="email" name="email" placeholder="Enter Email*">
+                <div id="emailError" class="error-message"></div>
+            </div>
+
+            <div class="form-control">
+                
+                <input type="number" id="age" name="age" placeholder="Enter Age*">
+                <div id="ageError" class="error-message"></div>
+            </div>
+
+            <div class="form-control">
+                
+                <input type="date" id="date" name="date">
+                <div id="dateError" class="error-message"></div>
+            </div>
+            
+            <div class="btn">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+
+    </div>
+
+
+    
+    <script src="static\js\main.js" ></script>
+    
+  
+
+</body>
+</html>
